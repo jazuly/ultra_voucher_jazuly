@@ -2,7 +2,7 @@
 
 ### Logic Test Anagram Online Script
 [JSFiddle](https://jsfiddle.net/dhntumL9/)
-```
+```js
 const arr = ['cook', 'save', 'taste', 'aves', 'vase', 'state', 'map'];
 let final = {};
 let cIndex = 0;
@@ -28,7 +28,7 @@ console.log(fin2)
 
 ### Query Test 
 [DBFiddle](https://www.db-fiddle.com/f/bHRNN9PXNAZBkCWx7qnQTq/0)
-```
+```sql
 SELECT id, nama, (
 	SELECT nama FROM users WHERE id = u1.parent_id
 ) AS parent_name
