@@ -27,9 +27,9 @@ console.log(fin2)
 ```
 
 ### Query Test 
-[DBFiddle](https://www.db-fiddle.com/f/bHRNN9PXNAZBkCWx7qnQTq/0)
+[DBFiddle](https://www.db-fiddle.com/f/bHRNN9PXNAZBkCWx7qnQTq/1)
 ```sql
-SELECT id, nama, (
+SELECT u1.id, u1.nama, (
 	SELECT nama FROM users WHERE id = u1.parent_id
 ) AS parent_name
 FROM users u1
