@@ -27,14 +27,14 @@ console.log(fin2)
 ```
 
 ### Query Test 
-[DBFiddle](https://www.db-fiddle.com/f/bHRNN9PXNAZBkCWx7qnQTq/2)
+[DBFiddle](https://www.db-fiddle.com/f/bHRNN9PXNAZBkCWx7qnQTq/3)
 ```sql
 SELECT
 	u1.id,
 	u1.nama,
 	CASE WHEN u1.parent_id IS NOT NULL
 	THEN (SELECT nama FROM users WHERE id = u1.parent_id LIMIT 1)
-    	ELSE null
+    	ELSE NULL
     	END parent_nama
 FROM users u1
 ```
